@@ -4,23 +4,35 @@ import axios from 'axios'
 
 function Content() {
     const [data, setdata] = useState([]);
-
-    useEffect(() => {
-        console.log("inside use effect");
-        axios.request(URL).then(response => {
-            console.log(response.data.results);
-            setdata(response.data.results);
-        });
-
-    }, [])
+    const [genre, setgenre] = useState([]);
     //adding const of the urlink to avoid code duplication
     const API_KEY = "?api_key=8a5c64f212f1e2d52bc655c31e4c9c22";
     const BASE_URL = "https://api.themoviedb.org/3";
     const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w300";
     let URL = BASE_URL + "/movie/popular" + API_KEY + "&language=en-US&page=1";
+
+    useEffect(() => {
+        // console.log("inside use effect");
+        axios.request(URL).then(response => {
+            console.log(response.data.results);
+            setdata(response.data.results);
+        });
+    }, [])
+
+    useEffect(() => {
+        axios.request(`https://api.themoviedb.org/3/genre/movie/list${API_KEY}&language=en-US`).then(response => {
+            console.log(response.data.genres);
+            setgenre(response.data.genres);
+        });
+    }, [])
     console.log(URL);
     console.log(data);
+    console.log(genre);
+
+    //if response.name 
     return (
+        <>
+        <br />
         <div className='container'>
             <div className="row">
                 {data.map(output_data => {
@@ -37,6 +49,7 @@ function Content() {
                 })}
             </div>
         </div>
+        </>
     )
 }
 
