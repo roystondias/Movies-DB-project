@@ -9,21 +9,38 @@ import AddIcon from '@mui/icons-material/Add';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
+
 function Navbar() {
     return (
-        <header>
-            <img src={logo} alt="Movies db logo" />
-            <ul>
-                <li>Movies</li>
-                <li>TV Shows</li>
-                <li>People</li>
-                <li>More</li>
-            </ul>
-            <AddIcon></AddIcon>
-            <NotificationsIcon></NotificationsIcon>
-            <AccountCircleIcon></AccountCircleIcon>
-            <SearchIcon></SearchIcon>
-        </header>
+        <nav className="navbar navbar-expand-lg bg-dark">
+            <div className="container-fluid">
+                <img src={logo} alt="" />
+                <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li className="nav-item">
+                            <a className="nav-link active text-white" aria-current="page" href="/">Movies</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link text-white" href="/">TV shows</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link text-white" href="/">People</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link text-white" href="/">More</a>
+                        </li>
+                    </ul>
+                    <div className="d-flex text-white mx-3" role="search">
+                        {/* <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                            <button className="btn btn-outline-success" type="submit">Search</button> */}
+                        <SearchIcon className='mx-3'></SearchIcon>
+                        <AddIcon className='mx-3'></AddIcon>
+                        <NotificationsIcon className='mx-3'></NotificationsIcon>
+                        <AccountCircleIcon className='mx-3'></AccountCircleIcon>
+                    </div>
+                </div>
+            </div>
+        </nav>
     )
 }
 
