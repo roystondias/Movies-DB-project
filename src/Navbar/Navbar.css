@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+header{
+    background: rgb(3, 37, 65);
+    color: white;
+    display: flex;
+    height: 60px;
+}
+img{
+    width: 30%;
+    height: 30%;
+}
+ul {
+    display: flex;
+}
+ul li{
+    text-decoration: none;
+    list-style: none;
+    margin-right: 10%;
+}
