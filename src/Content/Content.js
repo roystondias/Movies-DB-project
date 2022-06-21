@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 //importing the axios library
 import axios from 'axios'
 
-function Content() {
+function Content(props) {
     const [data, setdata] = useState([]);
     const [genre, setgenre] = useState([]);
     //adding const of the urlink to avoid code duplication
@@ -11,25 +11,23 @@ function Content() {
     const IMAGE_BASE_URL = "https://image.tmdb.org/t/p/w300";
     let URL = BASE_URL + "/movie/popular" + API_KEY + "&language=en-US&page=1";
 
+    // useEffect hook runs onces in which the GET request is made for the popular movies URL
     useEffect(() => {
-        // console.log("inside use effect");
         axios.request(URL).then(response => {
             console.log(response.data.results);
             setdata(response.data.results);
         });
     }, [])
 
+    //useEffect hook runs once to get the JSON file of the genre list
     useEffect(() => {
         axios.request(`https://api.themoviedb.org/3/genre/movie/list${API_KEY}&language=en-US`).then(response => {
             console.log(response.data.genres);
             setgenre(response.data.genres);
         });
     }, [])
-    console.log(URL);
-    console.log(data);
-    console.log(genre);
 
-    //if response.name 
+    console.log(props.genreData);
     return (
         <>
         <br />
