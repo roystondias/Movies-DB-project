@@ -1,14 +1,23 @@
 import './App.css';
+import React,{useState} from 'react';
+//importing all the components that will be used in App.js
 import Content from './Content/Content';
-//importing the Navbar component
+import GenreFilter from './Filters/GenreFilter';
 import Navbar from './Navbar/Navbar';
 
 function App() {
+  const [genreData, setGenreData] = useState("")
+  const genreDataFunction =(data)=>{
+    console.log(data);
+    setGenreData(data);
+  }
   return (
     <div>
+      {/* using the components */}
       <Navbar></Navbar>
       <br />
-      <Content></Content>
+      <GenreFilter data={genreDataFunction}></GenreFilter>
+      <Content genreData={genreData}></Content>
     </div>
   );
 }
