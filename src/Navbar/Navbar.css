@@ -6,6 +6,7 @@ header{
     color: white;
     display: flex;
     height: 60px;
+    width: 100%;
 }
 img{
     width: 30%;
@@ -17,5 +18,5 @@ ul {
 ul li{
     text-decoration: none;
     list-style: none;
-    margin-right: 10%;
+    padding: 10px;
 }

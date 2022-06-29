@@ -4,7 +4,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Breif Description
 
-In this project we will try to use the movies DB API to fetch the data and display it on the front end.
+In this project we will try to use the movies DB API to fetch most popular movies and display it on the front end.
+We use Bootstrap 5 to display the data fetched from API on the frontend.
 
-if someone clicks on the button
-then the movies which contain the genre should be displayed on the screen rest should be ignored.
+Note:
+1)use npm install.
+2)use npm install @mui/icons-material.
+
+
+Demo link: 
+
