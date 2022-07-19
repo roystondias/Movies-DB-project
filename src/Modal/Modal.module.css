@@ -1,0 +1,88 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.modal {
+  position: fixed;
+  top: 5vh;
+  left: 10%;
+  width: 80%;
+  z-index: 100;
+  overflow: hidden;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.header {
+  background: #4f005f;
+  padding: 1rem;
+}
+
+.header h2 {
+  margin: 0;
+  color: white;
+}
+
+.content {
+  padding: 1rem;
+}
+
+.content img {
+  width: 35%;
+  float: left;
+  padding: 0px 10px 0px 0px;
+}
+
+.actions {
+  padding: 1rem;
+  display: flex;
+  justify-content: flex-end;
+}
+
+button {
+  background-color: rgb(3, 37, 65);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.genres {
+  border: 1px solid rgb(17, 115, 196);
+  margin: 3px;
+  border-radius: 10px;
+  padding: 5px;
+  display: inline-block;
+}
+
+.division{
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .modal {
+    left: calc(50% - 20rem);
+    width: 40rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .modal {
+    top: 3vh;
+  }
+
+  .content img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    float: none;
+  }
+  .division {
+    width: 90%;
+    margin: auto;
+  }
+}
