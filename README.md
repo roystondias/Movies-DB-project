@@ -12,5 +12,5 @@ We use Bootstrap 5 to display the data fetched from API on the frontend.
 2)use npm install @mui/icons-material.
 
 
-Demo link: https://helpful-crostata-772dc3.netlify.app/
+Demo link: https://roystons-movies-db.netlify.app/
 
