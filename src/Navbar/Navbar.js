@@ -14,7 +14,7 @@ function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg bg-dark">
             <div className="container-fluid">
-                <img src={logo} alt="" />
+                <img src={logo?.src} alt="" />
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                         <li className="nav-item">
@@ -31,10 +31,10 @@ function Navbar() {
                         </li>
                     </ul>
                     <div className="d-flex text-white mx-3" role="search">
-                        <SearchIcon className='mx-3'></SearchIcon>
+                        {/* <SearchIcon className='mx-3'></SearchIcon>
                         <AddIcon className='mx-3'></AddIcon>
                         <NotificationsIcon className='mx-3'></NotificationsIcon>
-                        <AccountCircleIcon className='mx-3'></AccountCircleIcon>
+                        <AccountCircleIcon className='mx-3'></AccountCircleIcon> */}
                     </div>
                 </div>
             </div>
