@@ -1,10 +1,10 @@
 import './App.css';
 import React, { useState } from 'react';
 //importing all the components that will be used in App.js
-import Content from './Content/Content';
-import GenreFilter from './Filters/GenreFilter';
-import Navbar from './Navbar/Navbar';
-import Footer from './Footer/Footer';
+import Content from './content/Content';
+import GenreFilter from './filters/GenreFilter';
+import Navbar from './navbar/Navbar';
+import Footer from './footer/Footer';
 
 function App() {
   //using the useState hook
