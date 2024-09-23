@@ -3,10 +3,10 @@ import './Footer.css'
 function Footer() {
   return (
     <div id="footer">
-        <footer>
-        All rights reserved    
-        </footer>
-   </div>
+      <footer>
+        All rights reserved
+      </footer>
+    </div>
   )
 }
 

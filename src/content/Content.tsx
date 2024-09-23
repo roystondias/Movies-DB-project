@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 //importing the axios library
 import axios from 'axios'
-import Modal from '../Modal/Modal';
+import Modal from '../modal/Modal';
 
 function Content(props) {
     const [data, setdata] = useState([]);
@@ -20,10 +20,10 @@ function Content(props) {
         });
     }, [URL])
 
-    const onClickHandler =(event)=>{
+    const onClickHandler = (event) => {
         let URL = `${BASE_URL}/movie/${event.target.id}${API_KEY}`;
         let response = fetch(URL);
-        response.then((display_data)=> display_data.json() ).then(data => setmodal({
+        response.then((display_data) => display_data.json()).then(data => setmodal({
             date: data.release_date,
             title: data.original_title,
             overview: data.overview,
@@ -32,7 +32,7 @@ function Content(props) {
             genres: data.genres,
         }));
     }
-    const closeHandler =()=>{
+    const closeHandler = () => {
         setmodal();
     }
     return (

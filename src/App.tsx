@@ -1,5 +1,5 @@
 import './App.css';
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 //importing all the components that will be used in App.js
 import Content from './Content/Content';
 import GenreFilter from './Filters/GenreFilter';
@@ -9,7 +9,7 @@ import Footer from './Footer/Footer';
 function App() {
   //using the useState hook
   const [genreData, setGenreData] = useState("")
-  const genreDataFunction =(data)=>{
+  const genreDataFunction = (data) => {
     setGenreData(data);
   }
   return (

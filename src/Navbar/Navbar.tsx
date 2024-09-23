@@ -1,13 +1,7 @@
 //adding CSS to the Navbar
-import './Navbar.css'
+import './Navbar.css';
 //importing logo
-import logo from '../Logo/logo.svg'
-import React from 'react'
-//adding the materail icon
-import SearchIcon from '@mui/icons-material/Search';
-import AddIcon from '@mui/icons-material/Add';
-import NotificationsIcon from '@mui/icons-material/Notifications';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import logo from '../Logo/logo.svg';
 
 
 function Navbar() {
@@ -31,10 +25,6 @@ function Navbar() {
                         </li>
                     </ul>
                     <div className="d-flex text-white mx-3" role="search">
-                        {/* <SearchIcon className='mx-3'></SearchIcon>
-                        <AddIcon className='mx-3'></AddIcon>
-                        <NotificationsIcon className='mx-3'></NotificationsIcon>
-                        <AccountCircleIcon className='mx-3'></AccountCircleIcon> */}
                     </div>
                 </div>
             </div>
