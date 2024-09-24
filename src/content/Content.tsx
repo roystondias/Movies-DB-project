@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react'
-//importing the axios library
 import axios from 'axios'
 import Modal from '../modal/Modal';
 
