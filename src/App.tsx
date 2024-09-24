@@ -14,7 +14,6 @@ function App() {
   }
   return (
     <div>
-      {/* using the components */}
       <Navbar></Navbar><br />
       <GenreFilter data={genreDataFunction}></GenreFilter>
       <Content genreData={genreData}></Content>
