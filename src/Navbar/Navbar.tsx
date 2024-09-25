@@ -1,7 +1,8 @@
 import './Navbar.css';
 import logo from '../Logo/logo.svg';
+import React from 'react'
 
-export function Navbar() {
+const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg bg-dark">
             <div className="container-fluid">
@@ -28,3 +29,5 @@ export function Navbar() {
         </nav>
     )
 }
+
+export default Navbar

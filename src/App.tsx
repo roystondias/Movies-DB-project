@@ -2,12 +2,12 @@ import './App.css';
 import React, { useState } from 'react';
 import Content from './content/Content';
 import GenreFilter from './filters/GenreFilter';
-import { Navbar } from '../src/navbar/Navbar';
-import { Footer } from '../src/footer/Footer';
+import { Navbar } from './navbar';
+import { Footer } from './footer';
 
 function App() {
   const [genreData, setGenreData] = useState("")
-  const genreDataFunction = (data) => {
+  const genreDataFunction = (data: any) => {
     setGenreData(data);
   }
   return (
