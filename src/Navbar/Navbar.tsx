@@ -1,9 +1,7 @@
-//adding CSS to the Navbar
 import './Navbar.css';
-//importing logo
 import logo from '../Logo/logo.svg';
 
-export default function Navbar() {
+function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg bg-dark">
             <div className="container-fluid">
@@ -30,3 +28,5 @@ export default function Navbar() {
         </nav>
     )
 }
+
+export default Navbar
