@@ -2,8 +2,8 @@ import './App.css';
 import React, { useState } from 'react';
 import Content from './content/Content';
 import GenreFilter from './filters/GenreFilter';
-import { Navbar } from './navbar/Navbar';
-import { Footer } from './footer/Footer';
+import { Navbar } from '../src/navbar/Navbar';
+import { Footer } from '../src/footer/Footer';
 
 function App() {
   const [genreData, setGenreData] = useState("")
