@@ -3,7 +3,6 @@ import './Navbar.css';
 //importing logo
 import logo from '../Logo/logo.svg';
 
-
 function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg bg-dark">
