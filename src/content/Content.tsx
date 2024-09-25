@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
-import { Modal } from '../modal';
+import { Modal } from '../Modal';
 
 function Content(props) {
     const [data, setdata] = useState([]);
