@@ -3,7 +3,7 @@ import './Navbar.css';
 //importing logo
 import logo from '../Logo/logo.svg';
 
-const Navbar = () => {
+export default function Navbar() {
     return (
         <nav className="navbar navbar-expand-lg bg-dark">
             <div className="container-fluid">
@@ -30,5 +30,3 @@ const Navbar = () => {
         </nav>
     )
 }
-
-export default Navbar

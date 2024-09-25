@@ -1,7 +1,7 @@
 import React from 'react'
 import classes from './Modal.module.css'
 
-const Modal = (props) => {
+export default function Modal(props) {
     return (
         <>
             <div className={classes.backdrop}></div>
@@ -26,5 +26,3 @@ const Modal = (props) => {
         </>
     )
 }
-
-export default Modal

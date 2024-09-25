@@ -1,4 +1,4 @@
-// import type { Metadata } from 'next'
+// import type { Metadata } from 'next's
 
 export const metadata = {
     title: 'React App',
