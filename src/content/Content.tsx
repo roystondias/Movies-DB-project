@@ -14,29 +14,38 @@ function Content(props) {
 
     // useEffect hook runs onces in which the GET request is made for the popular movies URL
     useEffect(() => {
-        axios.request(URL).then(response => {
-            setdata(response.data.results);
-        });
+        // axios.request(URL).then(response => {
+        //     setdata(response.data.results);
+        // });
+
     }, [URL])
 
     const onClickHandler = (event) => {
-        let URL = `${BASE_URL}/movie/${event.target.id}${API_KEY}`;
-        let response = fetch(URL);
-        response.then((display_data) => display_data.json()).then(data => setmodal({
-            date: data.release_date,
-            title: data.original_title,
-            overview: data.overview,
-            ratings: data.vote_average,
-            imagePath: data.poster_path,
-            genres: data.genres,
-        }));
+        // let URL = `${BASE_URL}/movie/${event.target.id}${API_KEY}`;
+        // let response = fetch(URL);
+        // response.then((display_data) => display_data.json()).then(data => setmodal({
+        //     date: data.release_date,
+        //     title: data.original_title,
+        //     overview: data.overview,
+        //     ratings: data.vote_average,
+        //     imagePath: data.poster_path,
+        //     genres: data.genres,
+        // }));
     }
     const closeHandler = () => {
-        setmodal();
+        // setmodal();
     }
     return (
         <>
-            {modal && <Modal backdrop={`${IMAGE_BASE_URL}${modal.imagePath}`} data={modal} title={modal.title} overview={modal.overview} onClose={closeHandler}></Modal>}
+            {/* {
+                modal &&
+                <Modal
+                    backdrop={`${IMAGE_BASE_URL}${modal?.imagePath}`}
+                    data={modal}
+                    title={modal?.title}
+                    overview={modal?.overview}
+                    onClose={closeHandler} />
+            } */}
             <div className='container'>
                 <div className="row my-2">
                     {data.map(output_data => {
