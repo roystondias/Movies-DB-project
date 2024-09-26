@@ -2,8 +2,8 @@ import './App.css';
 import React, { useState } from 'react';
 import Content from './content/Content';
 import GenreFilter from './filters/GenreFilter';
-import Navbar from './navbar/Navbar.tsx';
-import Footer from './footer/Footer.tsx';
+import Navbar from './navbar/Navbar';
+import Footer from './footer/Footer';
 
 function App() {
   const [genreData, setGenreData] = useState("")
@@ -14,7 +14,7 @@ function App() {
     <div>
       <Navbar /><br />
       <GenreFilter data={genreDataFunction} />
-      <Content genreData={genreData} />
+      <Content />
       <Footer />
     </div>
   );
