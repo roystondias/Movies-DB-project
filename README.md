@@ -11,6 +11,9 @@ We use Bootstrap 5 to display the data fetched from API on the frontend.
 1)use npm install.
 2)use npm install @mui/icons-material.
 
+BIG NOTE:
+The project will run locally but its API's will not work because moviesDB as of 26/09/2024 doesnt work in Asia/India.
+This project is hence abondanded and the corresponding CSS styling is also broken as the project was migrated from Create React App to Next js 14
 
 Demo link: https://roystons-movies-db.netlify.app/
 
